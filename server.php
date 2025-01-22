@@ -1,7 +1,7 @@
 <?php
-    $server="dbaas-db-3223557-do-user-18863318-0.j.db.ondigitalocean.com";
+    $server="dbaas-db-3274263-do-user-18863318-0.j.db.ondigitalocean.com";
     $username='doadmin';
-    $password="AVNS_pdNon4upWGsz0Fsy8Tb";
+    $password="AVNS_YHi9FxLQohOuqD0Rn_b";
     $dbname="defaultdb";
     $port="25060";
 

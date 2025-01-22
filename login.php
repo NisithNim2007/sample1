@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $username=$_POST["user"];
     $password=$_POST["pass"];
 
-    $stmt=$conn->prepare("SELECT id, password FROM sample1 WHERE username=?");
+    $stmt=$conn->prepare("SELECT id, password FROM users WHERE username=?");
     $stmt->bind_param("s",$username);
     $stmt->execute();
     $stmt->bind_result($user_id, $hashed_password);

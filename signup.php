@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     $hashed_password = password_hash($password, PASSWORD_BCRYPT);
 
-    $stmt=$conn->prepare("INSERT INTO sample1 (username,password) VALUES(?,?)");
+    $stmt=$conn->prepare("INSERT INTO users (username,password) VALUES(?,?)");
     $stmt->bind_param("ss",$username,$hashed_password);
 
     if($stmt->execute()){
